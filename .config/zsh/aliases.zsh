@@ -22,6 +22,7 @@ alias dot="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 alias da="dot add"
 alias dc="dot commit"
 alias dp="dot push"
+alias dst="dot status -sb"
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   # fix alacritty font size on linux
