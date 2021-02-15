@@ -1,0 +1,9 @@
+[user]
+	name = MrDogeBro
+	email = MrDogeBro@users.noreply.github.com
+[pull]
+  rebase = false
+[core]
+  excludesFile = ~/.config/git/ignore
+[init]
+  defaultBranch = master
