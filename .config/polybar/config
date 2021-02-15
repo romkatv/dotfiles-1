@@ -25,13 +25,16 @@ primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 
-[arrows]
+[pwl]
 foreground-1 = #8d62a9
 background-1 = ${colors.background}
 foreground-2 = #668bd7
 background-2 = #8d62a9
 foreground-3 = #8b62a9
 background-3 = #668bd7
+foreground-tray = #668bd7
+background-tray = #000000
+; background-tray = ${colors.background}
 
 [fonts]
 main-0 = "SF Pro Text:pixelsize=10:weight=medium;2"
@@ -113,8 +116,8 @@ line-color = #000000
 border-size = 0
 border-color = #000000
 
-padding-left = 1
-padding-right = 1
+padding-left = 0
+padding-right = 0
 
 module-margin-left = 0
 module-margin-right = 0
@@ -125,14 +128,14 @@ font-2 = ${fonts.main-2}
 
 modules-left =
 modules-center =
-modules-right = text date
+modules-right = date tray-arrow
 
 separator =
 
 tray-position = right
 tray-deteched = false
 tray-maxsize = 20
-tray-background = ${colors.background}
+tray-background = ${pwl.background-tray}
 tray-offset-x = 0
 tray-offset-y = 0
 tray-padding = 4
@@ -141,6 +144,15 @@ tray-scale = 1.0
 ##########################################
 #               Modules
 ##########################################
+
+[module/tray-arrow]
+type = custom/text
+content = " "
+
+inherit = powerline-templates/right-to-left-item
+background = ${pwl.background-tray}
+background-next = ${pwl.background-3}
+content-background = ${self.background}
 
 [module/xwindow]
 type = internal/xwindow
@@ -224,14 +236,13 @@ type = internal/date
 interval = 1
 
 inherit = powerline-templates/right-to-left-item
-background = ${arrows.background-3}
-background-next = ${arrows.background-2}
+background = ${pwl.background-3}
+background-next = ${pwl.background-2}
+format-background = ${self.background}
 
 date = %b %d
 time = %H:%M:%S
 label = " %date%  %time% "
-
-format-background = ${self.background}
 
 [module/battery]
 type = internal/battery
