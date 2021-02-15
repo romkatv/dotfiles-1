@@ -1,0 +1,41 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "graphql",
+    "html",
+    "yaml",
+    "json",
+    "python",
+    "rust"
+  ],
+  // python config
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "black",
+  "python.formatting.blackArgs": [],
+  "python.pythonPath": "python3",
+  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"],
+  // explorer
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.file.showHiddenFiles": true,
+  "explorer.file.autoReveal": false,
+  "explorer.file.child.template": "[git | 2] [selection | clip | 1] [indent][icon | 1] [diagnosticError & 1][filename omitCenter 1][modified][readonly] [linkIcon & 1][link growRight 1 omitCenter 5]",
+  "explorer.buffer.root.template": "[icon & 1] OPEN FILES",
+  "explorer.file.root.template": "[icon & 1] PROJECT ([root])",
+  "explorer.keyMappings.global": {
+    "<cr>": ["expandable?", ["expanded?", "collapse", "expand"], "open"],
+    "v": "open:vsplit"
+  },
+  // prettier
+  "prettier.singleQuote": true,
+  // snips
+  "snippets.userSnippetsDirectory": "~/.config/nvim/snips"
+}

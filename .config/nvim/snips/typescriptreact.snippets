@@ -1,0 +1,27 @@
+snippet rf "TSX Function Component"
+import React from 'react';
+
+interface Props {}
+
+export const ${1:FunctionName}: React.FC<Props> = () => {
+		return ();
+}
+endsnippet
+
+snippet rc "TSX Class Component"
+import React, { Component } from 'react';
+
+type Props = {};
+type States = {};
+
+export default class ${1:ClassName} extends Component<Props, States> {
+	constructor(props: Props) {
+		super(props);
+		this.state = {};
+	}
+
+	render() {
+		return ();
+	}
+}
+endsnippet

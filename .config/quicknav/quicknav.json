@@ -1,0 +1,95 @@
+{
+  "shortcuts": [
+    {
+      "name": "Config",
+      "description": "Takes you to the .config folder.",
+      "location": "~/.config",
+      "calls": [
+        "config",
+        "conf"
+      ]
+    },
+    {
+      "name": "Projects",
+      "description": "Takes you to the projects folder.",
+      "location": "~/Documents/Projects",
+      "calls": [
+        "projects",
+        "proj"
+      ]
+    },
+    {
+      "name": "Python",
+      "description": "Takes you to the python projects folder.",
+      "location": "~/Documents/Projects/Python",
+      "calls": [
+        "python",
+        "py"
+      ]
+    },
+    {
+      "name": "Javascript",
+      "description": "Takes you to the javascript projects folder.",
+      "location": "~/Documents/Projects/Javascript",
+      "calls": [
+        "javascript",
+        "js"
+      ]
+    },
+    {
+      "name": "Websites",
+      "description": "Takes you to the websites projects folder.",
+      "location": "~/Documents/Projects/Websites",
+      "calls": [
+        "websites",
+        "web"
+      ]
+    },
+    {
+      "name": "Extendscript",
+      "description": "Takes you to the extendscript projects folder.",
+      "location": "~/Documents/Projects/Extendscript",
+      "calls": [
+        "extendscript",
+        "es"
+      ]
+    },
+    {
+      "name": "Java",
+      "description": "Takes you to the java projects folder.",
+      "location": "~/Documents/Projects/Java",
+      "calls": [
+        "java",
+        "jv"
+      ]
+    },
+    {
+      "name": "Electronics",
+      "description": "Takes you to the electronics projects folder.",
+      "location": "~/Documents/Projects/Electronics",
+      "calls": [
+        "electronics",
+        "elec"
+      ]
+    },
+    {
+      "name": "Rust",
+      "description": "Takes you to the rust projects folder.",
+      "location": "~/Documents/Projects/Rust",
+      "calls": [
+        "rust",
+        "rs"
+      ]
+    },
+    {
+      "name": "Dotfiles",
+      "description": "Takes you to the dotfiles folder.",
+      "location": "~/.dotfiles",
+      "calls": [
+        "dotfiles",
+        "dot",
+        "df"
+      ]
+    }
+  ]
+}

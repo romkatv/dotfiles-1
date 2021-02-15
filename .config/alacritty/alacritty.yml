@@ -1,0 +1,83 @@
+# Window config
+window:
+  dimensions:
+    columns: 140
+    lines: 38
+  padding:
+    x: 10
+    y: 10
+  decorations: none # remove window borders
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+background_opacity: 0.96
+
+# Font config
+font:
+  normal:
+    family: JetBrainsMono Nerd Font
+    style: Medium
+
+  bold:
+    family: JetBrainsMono Nerd Font
+    style: Bold
+
+  italic:
+    family: JetBrainsMono Nerd Font
+    style: Italic
+
+  size: 11.0
+  offset:
+    x: 0
+    y: 0
+
+# Color config
+colors:
+  # Default colors
+  primary:
+    background: '0x0e1114'
+    foreground: '0xd6d6d6'
+
+  # Normal colors
+  normal:
+    black: '0x1d1f21'
+    red: '0xcc6666'
+    green: '0xb5bd68'
+    yellow: '0xf0c674'
+    blue: '0x81a2be'
+    magenta: '0xb294bb'
+    cyan: '0x8abeb7'
+    white: '0xc5c8c6'
+
+  # Bright colors
+  bright:
+    black: '0x969896'
+    red: '0xcc6666'
+    green: '0xb5bd68'
+    yellow: '0xf0c674'
+    blue: '0x81a2be'
+    magenta: '0xb294bb'
+    cyan: '0x8abeb7'
+    white: '0xffffff'
+
+  indexed_colors:
+    - { index: 16, color: '0xde935f' }
+    - { index: 17, color: '0xa3685a' }
+    - { index: 18, color: '0x282a2e' }
+    - { index: 19, color: '0x373b41' }
+    - { index: 20, color: '0xb4b7b4' }
+    - { index: 21, color: '0xe0e0e0' }
+
+  selection:
+    text: '0xffffff'
+    background: '0x831b1b'
+    white: '0xffffff'
+
+cursor:
+  style: Block
+  unfocused_hollow: true
+
+key_bindings:
+  - { key: N, mods: Control, action: SpawnNewInstance }
