@@ -19,6 +19,9 @@ alias mv="mv -i"
 
 # managing dotfiles
 alias dot="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
+alias da="dot add"
+alias dc="dot commit"
+alias dp="dot push"
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   # fix alacritty font size on linux

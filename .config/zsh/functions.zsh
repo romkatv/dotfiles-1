@@ -33,6 +33,31 @@ gacp () {
 
 # git commit push
 gcap () {
-  git commit -m "$1"
-  git push
+dot commit -m "$1"
+dot push
+}
+
+# dotfiles add commit
+dac () {
+  dot add "$1"
+  dot commit -m "$2"
+}
+
+# dotfiles add commit push
+dacp () {
+  message=${@:$#}
+  files=(${@:1:$# - 1})
+
+  for file in $files; do
+    dot add "$file"
+  done
+
+  dot commit -m "$message"
+  dot push
+}
+
+# dotfiles commit push
+dcap () {
+  dot commit -m "$1"
+  dot push
 }
