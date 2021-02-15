@@ -24,6 +24,9 @@ alias dc="dot commit"
 alias dp="dot push"
 alias dst="dot status -sb"
 
+# shorthand git
+alias gst="git status -sb"
+
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   # fix alacritty font size on linux
   alias alacritty="command alacritty --option font.size=8.5"
