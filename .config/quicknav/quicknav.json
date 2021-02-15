@@ -6,7 +6,8 @@
       "location": "~/.config",
       "calls": [
         "config",
-        "conf"
+        "conf",
+        "cf"
       ]
     },
     {
