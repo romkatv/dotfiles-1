@@ -108,7 +108,7 @@ font-2 = ${fonts.main-2}
 
 modules-left =
 modules-center =
-modules-right = date tray-arrow
+modules-right = date tray-arrow battery
 
 separator =
 
