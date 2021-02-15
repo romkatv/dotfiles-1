@@ -33,7 +33,12 @@ background-2 = #8d62a9
 foreground-3 = #8b62a9
 background-3 = #668bd7
 
-include-file = $HOME/.config/polybar/components/powerline-polybar/powerline-polybar.config
+[fonts]
+main-0 = "SF Pro Text:pixelsize=10:weight=medium;2"
+main-1 = "Inconsolata for Powerline:pixelsize=15:antialias=true;3"
+main-2 = "Font Awesome 5 Free:style=Regular:pixelsize=9;1"
+
+include-file = $HOME/.config/polybar/components/powerline-polybar.config
 
 ##########################################
 #               Awesome Bar
@@ -63,9 +68,9 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
+font-0 = ${fonts.main-0}
+font-1 = ${fonts.main-1}
+font-2 = ${fonts.main-2}
 
 modules-left = bspwm i3
 modules-center = date
@@ -114,13 +119,13 @@ padding-right = 1
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = "Inconsolata for Powerline:pixelsize=15:antialias=true;3"
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=9;1"
+font-0 = ${fonts.main-0}
+font-1 = ${fonts.main-1}
+font-2 = ${fonts.main-2}
 
 modules-left =
 modules-center =
-modules-right = test-text date
+modules-right = text date
 
 separator =
 
@@ -136,15 +141,6 @@ tray-scale = 1.0
 ##########################################
 #               Modules
 ##########################################
-
-[module/test-text]
-type = custom/text
-content = "Updates"
-
-inherit = powerline-templates/right-to-left-item
-background = ${arrows.background-2}
-background-next = ${colors.background}
-content-background = ${self.background}
 
 [module/xwindow]
 type = internal/xwindow
