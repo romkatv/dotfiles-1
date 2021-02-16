@@ -114,7 +114,7 @@ separator =
 
 tray-position = right
 tray-deteched = false
-tray-maxsize = 20
+tray-maxsize = 15
 tray-background = ${pwl.background-tray}
 tray-offset-x = 0
 tray-offset-y = 0
