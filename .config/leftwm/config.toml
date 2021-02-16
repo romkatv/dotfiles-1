@@ -5,8 +5,8 @@ tags = ["dev", "www", "chat"]
 [[keybind]]
 command = "Execute"
 value = "dmenu_run"
-modifier = ["modkey"]
-key = "p"
+modifier = ["Alt"]
+key = "space"
 
 [[keybind]]
 command = "Execute"
@@ -28,7 +28,7 @@ key = "r"
 command = "Execute"
 value = "pkill leftwm"
 modifier = ["modkey", "Shift"]
-key = "x"
+key = "q"
 
 [[keybind]]
 command = "Execute"
@@ -49,12 +49,12 @@ key = "w"
 [[keybind]]
 command = "MoveWindowUp"
 modifier = ["modkey", "Shift"]
-key = "Up"
+key = "k"
 
 [[keybind]]
 command = "MoveWindowDown"
 modifier = ["modkey", "Shift"]
-key = "Down"
+key = "j"
 
 [[keybind]]
 command = "MoveWindowTop"
@@ -64,12 +64,12 @@ key = "Return"
 [[keybind]]
 command = "FocusWindowUp"
 modifier = ["modkey"]
-key = "Up"
+key = "k"
 
 [[keybind]]
 command = "FocusWindowDown"
 modifier = ["modkey"]
-key = "Down"
+key = "j"
 
 [[keybind]]
 command = "NextLayout"
@@ -162,6 +162,17 @@ command = "MoveToTag"
 value = "3"
 modifier = ["modkey", "Shift"]
 key = "3"
+[[keybind]]
+command = "IncreaseMainWidth"
+value = "1"
+modifier = ["modkey", "Shift"]
+key = "l"
+
+[[keybind]]
+command = "DecreaseMainWidth"
+value = "1"
+modifier = ["modkey", "Shift"]
+key = "h"
 
 [[keybind]]
 command = "MoveToTag"
@@ -198,3 +209,16 @@ command = "MoveToTag"
 value = "9"
 modifier = ["modkey", "Shift"]
 key = "9"
+
+[[keybind]]
+command = "IncreaseMainWidth"
+value = "1"
+modifier = ["modkey", "Shift"]
+key = "l"
+
+[[keybind]]
+command = "DecreaseMainWidth"
+value = "1"
+modifier = ["modkey", "Shift"]
+key = "h"
+
