@@ -105,10 +105,12 @@ module-margin-right = 0
 font-0 = ${fonts.main-0}
 font-1 = ${fonts.main-1}
 font-2 = ${fonts.main-2}
+font-3 = ${fonts.main-3}
+font-4 = ${fonts.main-4}
 
 modules-left =
 modules-center =
-modules-right = date tray-arrow battery
+modules-right = updates date tray-arrow battery
 
 separator =
 
