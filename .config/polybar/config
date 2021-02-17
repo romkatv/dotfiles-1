@@ -82,8 +82,8 @@ cursor-scroll = ns-resize
 ##########################################
 
 [bar/mainbar-left]
-width = 100%
-height = 20
+width = ${config.width}
+height = ${config.height}
 fixed-center = true
 
 background = ${colors.background}
@@ -107,10 +107,11 @@ font-1 = ${fonts.main-1}
 font-2 = ${fonts.main-2}
 font-3 = ${fonts.main-3}
 font-4 = ${fonts.main-4}
+font-5 = ${fonts.main-5}
 
-modules-left =
+modules-left = os-menu
 modules-center =
-modules-right = updates date tray-arrow battery
+modules-right = cpu updates date tray-arrow battery
 
 separator =
 
