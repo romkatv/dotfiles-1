@@ -9,7 +9,7 @@ activeSessionId=$(for sessionid in $(loginctl list-sessions --no-legend | awk '{
 option0="About"
 option1="Restart"
 option2="Shutdown"
-option3="Logout of $(loginctl show-session -p Name $activeSessionId | awk -F = '/Name/ { name = $2 } /Name/ { print name }')"
+option3="Log Out of $(loginctl show-session -p Name $activeSessionId | awk -F = '/Name/ { name = $2 } /Name/ { print name }')"
 
 options="$option0\n$option1\n$option2\n$option3"
 
