@@ -28,54 +28,47 @@ include-file = $HOME/.config/polybar/components/powerline-polybar.config
 ##########################################
 
 [bar/main-awesome]
-;monitor = ${env:MONITOR:HDMI-1}
-width = 100%
-height = 27
-;offset-x = 1%
-;offset-y = 1%
-radius = 0.0
+width = ${config.width}
+height = ${config.height}
 fixed-center = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
+radius = 0.0
 line-size = 2
-line-color = #f00
+line-color = #000000
 
 border-size = 0
-border-color = #00000000
+border-color = #000000
 
 padding-left = 0
-padding-right = 2
+padding-right = 0
 
-module-margin-left = 1
-module-margin-right = 2
+module-margin-left = 0
+module-margin-right = 0
 
 font-0 = ${fonts.main-0}
 font-1 = ${fonts.main-1}
 font-2 = ${fonts.main-2}
+font-3 = ${fonts.main-3}
+font-4 = ${fonts.main-4}
+font-5 = ${fonts.main-5}
 
-modules-left = bspwm i3
-modules-center = date
-modules-right = battery
+modules-left = os-menu
+modules-center =
+modules-right = cpu updates date tray-arrow battery
+
+separator =
 
 tray-position = right
-tray-padding = 2
-;tray-background = #0063ff
-
-;wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
-
-cursor-click = pointer
-cursor-scroll = ns-resize
+tray-deteched = false
+tray-maxsize = 15
+tray-background = ${pwl.background-tray}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 4
+tray-scale = 1.0
 
 ##########################################
 #               LeftWM Bar
