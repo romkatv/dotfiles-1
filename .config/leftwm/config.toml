@@ -10,6 +10,12 @@ key = "space"
 
 [[keybind]]
 command = "Execute"
+value = "$HOME/scripts/menus/os-menu/os-menu.sh"
+modifier = ["modkey"]
+key = "o"
+
+[[keybind]]
+command = "Execute"
 value = "dmenu_run"
 modifier = ["modkey"]
 key = "p"
