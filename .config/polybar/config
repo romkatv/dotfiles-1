@@ -81,7 +81,7 @@ cursor-scroll = ns-resize
 #               LeftWM Bar
 ##########################################
 
-[bar/mainbar-left]
+[bar/main-left]
 width = ${config.width}
 height = ${config.height}
 fixed-center = true
