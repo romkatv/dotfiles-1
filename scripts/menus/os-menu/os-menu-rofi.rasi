@@ -1,0 +1,24 @@
+configuration {
+	width: 14;
+	lines: 5;
+	columns: 1;
+	font: "SF Pro Text 10";
+	bw: 1;
+	location: 1;
+	padding: 10;
+	yoffset: 22;
+	xoffset: 2;
+	fixed-num-lines: true;
+/*	icon-theme: ;*/
+	sort: false;
+	case-sensitive: false;
+/*	parse-hosts: false;*/
+/*	parse-known-hosts: true;*/
+/*	combi-modi: "window,run";*/
+/*	matching: "normal";*/
+/*	tokenize: true;*/
+/*	line-margin: 2;*/
+/*	line-padding: 1;*/
+	hide-scrollbar: true;
+	theme: "main-theme";
+}
