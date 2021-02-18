@@ -7,7 +7,7 @@ activeSessionId=$(for sessionid in $(loginctl list-sessions --no-legend | awk '{
 
 
 option0="About"
-option1="Restart"
+option1="Reboot"
 option2="Shutdown"
 option3="Log Out of $(loginctl show-session -p Name $activeSessionId | awk -F = '/Name/ { name = $2 } /Name/ { print name }')"
 
@@ -26,10 +26,10 @@ case $menuSelected in
     alacritty --option font.size=8.5 -e sh -c 'neofetch; while true; do sleep 1; done'
     ;;
   $option1)
-    echo "restart"
+    reboot
     ;;
   $option2)
-    echo "shutdown"
+    shutdown now
     ;;
   $option3)
     logoutActive
