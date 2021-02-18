@@ -4,9 +4,15 @@ tags = ["dev", "www", "chat"]
 
 [[keybind]]
 command = "Execute"
-value = "dmenu_run"
+value = "rofi -show run -theme main-theme"
 modifier = ["Alt"]
 key = "space"
+
+[[keybind]]
+command = "Execute"
+value = "dmenu_run"
+modifier = ["modkey"]
+key = "p"
 
 [[keybind]]
 command = "Execute"
