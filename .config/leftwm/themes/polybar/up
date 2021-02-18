@@ -29,7 +29,7 @@ if [ -x "$(command -v flameshot)" ]; then
   flameshot
 fi
 
-
+# startup polybar
 index=0
 monitor="$(polybar -m | grep +0+0 | sed s/:.*// | tac)"
 leftwm-state -q -n -t $SCRIPTPATH/sizes.liquid | sed -r '/^\s*$/d' | while read -r width x y
