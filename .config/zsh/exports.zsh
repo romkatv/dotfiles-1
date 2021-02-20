@@ -20,5 +20,10 @@ if [ -f "/usr/local/opt/ruby/bin" ]; then
   export PATH="/usr/local/opt/ruby/bin:$PATH"
 fi
 
+# add python scripts bin to path
+if [ -d "$HOME/Documents/Projects/Python/Scripts/bin" ]; then
+  export PATH="$HOME/Documents/Projects/Python/Scripts/bin:$PATH"
+fi
+
 # set command for fzf to use
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
