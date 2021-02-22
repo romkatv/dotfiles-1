@@ -29,6 +29,10 @@ if [ -x "$(command -v flameshot)" ]; then
   flameshot
 fi
 
+if [ -x "$(command -v flameshot)" ]; then
+  clipcatd
+fi
+
 # startup polybar
 index=0
 monitor="$(polybar -m | grep +0+0 | sed s/:.*// | tac)"
