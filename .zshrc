@@ -5,6 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+[ -f $HOME/.config/zsh/prompt-elements.zsh ] && source $HOME/.config/zsh/prompt-elements.zsh
 [ -f $HOME/.config/zsh/theme.zsh ] && source $HOME/.config/zsh/theme.zsh
 [ -f $HOME/.config/zsh/exports.zsh ] && source $HOME/.config/zsh/exports.zsh
 [ -f $HOME/.config/zsh/general.zsh ] && source $HOME/.config/zsh/general.zsh
