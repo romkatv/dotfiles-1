@@ -345,11 +345,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
   #####################################[ vcs: git status ]######################################
   # Version control system colors.
-  typeset -g POWERLEVEL9K_VCS_CLEAN_BACKGROUND=234
-  typeset -g POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=3
-  typeset -g POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND=2
+  typeset -g POWERLEVEL9K_VCS_CLEAN_BACKGROUND=235
+  typeset -g POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=235
+  typeset -g POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND=235
   typeset -g POWERLEVEL9K_VCS_CONFLICTED_BACKGROUND=3
-  typeset -g POWERLEVEL9K_VCS_LOADING_BACKGROUND=8
+  typeset -g POWERLEVEL9K_VCS_LOADING_BACKGROUND=235
 
   # Branch icon. Set this parameter to '\uF126 ' for the popular Powerline branch icon.
   typeset -g POWERLEVEL9K_VCS_BRANCH_ICON='\uF126 '
@@ -379,8 +379,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
     # Styling for different parts of Git status.
     local       meta='%7F' # white foreground
     local      clean='%39F' # blue/teal foreground
-    local   modified='%0F' # black foreground
-    local  untracked='%0F' # black foreground
+    local   modified='%3F' # yellow foreground
+    local  untracked='%33F' # black foreground
     local conflicted='%1F' # red foreground
 
     local res
