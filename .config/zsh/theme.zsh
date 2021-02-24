@@ -36,6 +36,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
     # os_icon                 # os identifier
     dir                     # current directory
     # prompt_char           # prompt symbol
+    conditional_newline
     vcs                     # git status
     virtualenv
   )
