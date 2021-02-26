@@ -17,3 +17,4 @@ eval "$(quicknav init zsh)"
 # ========= Plugin Config =========
 # vi-mode
 VI_MODE_SET_CURSOR=false
+VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
