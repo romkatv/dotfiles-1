@@ -60,7 +60,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
     # nodeenv                 # node.js environment (https://github.com/ekalinin/nodeenv)
     node_version          # node.js version
     # go_version            # go version (https://golang.org)
-    # rust_version          # rustc version (https://www.rust-lang.org)
+    rust_version          # rustc version (https://www.rust-lang.org)
     # dotnet_version        # .NET version (https://dotnet.microsoft.com)
     # php_version           # php version (https://www.php.net/)
     # laravel_version       # laravel php framework version (https://laravel.com/)
@@ -1057,7 +1057,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
   # Show rust version only when in a rust project subdirectory.
   typeset -g POWERLEVEL9K_RUST_VERSION_PROJECT_ONLY=true
   # Custom icon.
-  # typeset -g POWERLEVEL9K_RUST_VERSION_VISUAL_IDENTIFIER_EXPANSION='⭐'
+  typeset -g POWERLEVEL9K_RUST_VERSION_VISUAL_IDENTIFIER_EXPANSION=''
 
   ###############[ dotnet_version: .NET version (https://dotnet.microsoft.com) ]################
   # .NET version color.
