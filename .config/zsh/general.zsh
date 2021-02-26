@@ -5,7 +5,7 @@ HYPHEN_INSENSITIVE="true"
 DEFAULT_USER="$(whoami)"
 
 # zsh plugins
-plugins=(git gitignore virtualenv)
+plugins=(git gitignore virtualenv sudo)
 
 # pulls in oh-my-zsh
 source $ZSH/oh-my-zsh.sh
