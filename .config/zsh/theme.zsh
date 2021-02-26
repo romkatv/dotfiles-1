@@ -53,7 +53,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
     # asdf                    # asdf version manager (https://github.com/asdf-vm/asdf)
     # virtualenv              # python virtual environment (https://docs.python.org/3/library/venv.html)
     # anaconda                # conda environment (https://conda.io/)
-    # pyenv                   # python environment (https://github.com/pyenv/pyenv)
+    pyenv                   # python environment (https://github.com/pyenv/pyenv)
     # goenv                   # go environment (https://github.com/syndbg/goenv)
     # nodenv                  # node.js version from nodenv (https://github.com/nodenv/nodenv)
     # nvm                     # node.js version from nvm (https://github.com/nvm-sh/nvm)
@@ -962,7 +962,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
   ################[ pyenv: python environment (https://github.com/pyenv/pyenv) ]################
   # Pyenv color.
   typeset -g POWERLEVEL9K_PYENV_FOREGROUND=0
-  typeset -g POWERLEVEL9K_PYENV_BACKGROUND=4
+  typeset -g POWERLEVEL9K_PYENV_BACKGROUND=220
   # Hide python version if it doesn't come from one of these sources.
   typeset -g POWERLEVEL9K_PYENV_SOURCES=(shell local global)
   # If set to false, hide python version if it's the same as global:
@@ -984,7 +984,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
   typeset -g POWERLEVEL9K_PYENV_CONTENT_EXPANSION='${P9K_CONTENT}${${P9K_PYENV_PYTHON_VERSION:#$P9K_CONTENT}:+ $P9K_PYENV_PYTHON_VERSION}'
 
   # Custom icon.
-  # typeset -g POWERLEVEL9K_PYENV_VISUAL_IDENTIFIER_EXPANSION='⭐'
+  typeset -g POWERLEVEL9K_PYENV_VISUAL_IDENTIFIER_EXPANSION=''
 
   ################[ goenv: go environment (https://github.com/syndbg/goenv) ]################
   # Goenv color.
