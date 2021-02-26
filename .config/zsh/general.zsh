@@ -5,7 +5,7 @@ HYPHEN_INSENSITIVE="true"
 DEFAULT_USER="$(whoami)"
 
 # zsh plugins
-plugins=(git gitignore virtualenv sudo)
+plugins=(git gitignore virtualenv sudo vi-mode)
 
 # pulls in oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -13,3 +13,7 @@ source $ZSH/oh-my-zsh.sh
 # load cli functions
 eval "$(zoxide init zsh)"
 eval "$(quicknav init zsh)"
+
+# ========= Plugin Config =========
+# vi-mode
+VI_MODE_SET_CURSOR=false
